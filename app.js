@@ -15,7 +15,7 @@ var Controller = {
 		var model = new Model(dados);
 		var msg = '';
 
-		Model.save(function (err, data) {
+		model.save(function (err, data) {
 			if(err) {
 				console.log("Erro: ", err);
 				msg = "Erro: " + err;
